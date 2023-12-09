@@ -8,7 +8,8 @@ export default function About() {
       <Logo src="/paul.png" />
       <p className="text-xl">
         M. Paul Games LLC develops accessible games for the browser.
-        <br/>
+      </p>
+      <p>
         You can contact us by sending an email to
         {' '}
         <a href={`mailto:${email}`} className="text-blue-600">
