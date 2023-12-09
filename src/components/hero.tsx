@@ -1,25 +1,21 @@
-export function Hero(props: {
-  url?: string;
-  img?: string;
-  title: string;
-  description: string;
-  dates: string;
-}) {
+import { ProjectInfo } from "@/types";
+
+export function Hero(props: ProjectInfo) {
   return (
-    <section className="relative h-96 w-full bg-cover bg-center bg-purple-300" style={{
+    <section className="hero relative h-96 w-full bg-cover bg-center odd:bg-red-200 even:bg-blue-200" style={{
       backgroundImage: `url(${props.img})`,
     }}>
       <div className="absolute w-full h-full bg-black bg-opacity-30 flex flex-col justify-center items-center">
-        <div className="text-white">
+        <div className="text-white text-xl">
           <a href={props.url ?? ""}>
-            <div className="text-lg font-bold">
+            <div className="text-2xl font-bold">
               {props.title}
             </div>
           </a>
-          <div className="">
+          <div className="italic">
             {props.description}
           </div>
-          <div className="italic">
+          <div className="">
             {props.dates}
           </div>
         </div>
