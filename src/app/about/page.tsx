@@ -1,13 +1,9 @@
+import { Logo } from "@/components/logo";
+
 export default function About() {
   return (
-    <main className="flex flex-col justify-center items-middle min-h-screen text-center">
-      <img
-        className="mx-auto"
-        src="/lemon64x64.png"
-        alt="lemon"
-        width={64}
-        height={64}
-      />
+    <main className="flex flex-col justify-center items-center text-center">
+      <Logo src="/paul.png" />
       <h1>
         About
       </h1>

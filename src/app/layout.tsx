@@ -1,3 +1,4 @@
+import { NavBar } from '@/components/navbar'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -19,7 +20,10 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.png" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} min-h-screen`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }
