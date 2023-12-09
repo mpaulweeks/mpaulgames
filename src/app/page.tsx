@@ -2,15 +2,16 @@ import { Hero } from "@/components/hero";
 import { ProjectInfo } from "@/types";
 
 const projects: ProjectInfo[] = [{
+  img: `/assets/newtagfighter.jpg`,
   title: `New Tag Fighter`,
   description: `Tag-team fighting game (more info coming soon)`,
-  dates: `2023 - present`,
+  dates: `2024`,
 }, {
   url: `https://about.toughlovearena.com`,
   img: `https://about.toughlovearena.com/asset/gallery/720p/gameplay1.jpg`,
   title: `Tough Love Arena`,
   description: `Beginner friendly fighting game with simple controls`,
-  dates: `2019 - present`,
+  dates: `2021`,
 }, {
   url: `https://snowman.mpaulweeks.com/`,
   img: `/assets/snowman.png`,
