@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function DesktopNav() {
   return (
-    <main className="flex-row justify-center items-center bg-black text-white p-4 text-lg gap-4 font-bold hidden md:flex">
+    <nav className="flex-row justify-center items-center bg-black text-white p-4 text-lg gap-4 font-bold hidden md:flex">
       <img
         className="inline-block h-10"
         src="/lemon64x64.png"
@@ -15,19 +15,20 @@ export function DesktopNav() {
       <Link href="/about">
         About
       </Link>
-    </main>
+    </nav>
   )
 }
 
 export function NavBar() {
   return (
     <>
-      <nav className="fixed w-full top-0 z-10">
+      <div className="fixed w-full top-0 z-10">
         <DesktopNav />
-      </nav>
-      <nav className="block">
+      </div>
+      {/* render 2nd invisible one to take up space */}
+      <div className="block invisible">
         <DesktopNav />
-      </nav>
+      </div>
     </>
   )
 }
