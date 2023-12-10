@@ -4,13 +4,13 @@ import { ProjectInfo } from "@/types";
 const projects: ProjectInfo[] = [{
   img: `/assets/newtagfighter.jpg`,
   title: `New Tag Fighter`,
-  description: `Tag-team fighting game (more info coming soon)`,
+  description: `3v3 tag team fighting game`,
   dateClosedAlpha: `Coming 2024`,
 }, {
   url: `https://about.toughlovearena.com`,
   img: `https://about.toughlovearena.com/asset/gallery/720p/gameplay1.jpg`,
   title: `Tough Love Arena`,
-  description: `Beginner friendly fighting game with simple controls`,
+  description: `Beginner friendly fighting game`,
   dateOpenBeta: `2021`,
   dateRelease: `Coming 2024`,
 }, {
