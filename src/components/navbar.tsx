@@ -12,7 +12,7 @@ function DesktopNav() {
           M. Paul Games
         </Link>
       </div>
-      <Link href="/about">
+      <Link href="/about" className="mr-4">
         About
       </Link>
     </nav>

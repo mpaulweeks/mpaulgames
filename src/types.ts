@@ -3,5 +3,7 @@ export type ProjectInfo = {
   img?: string;
   title: string;
   description: string;
-  dates: string;
+  dateClosedAlpha?: string;
+  dateOpenBeta?: string;
+  dateRelease?: string;
 }

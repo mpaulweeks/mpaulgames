@@ -14,7 +14,19 @@ function Background({ img }: {
   );
 }
 
+type DateInfo = {
+  label: string;
+  date: string;
+}
+
 export function Hero(props: ProjectInfo) {
+  const dates = ([
+    { label: 'Release', date: props.dateRelease },
+    { label: 'Open Beta', date: props.dateOpenBeta },
+    { label: 'Closed Alpha', date: props.dateClosedAlpha },
+  ] satisfies Partial<DateInfo>[])
+    .map(d => d.date ? d as DateInfo : undefined)
+    .flatMap(e => e ? [e] : []);
   return (
     <section className="group relative w-full h-96 overflow-hidden">
       <Background img={props.img} />
@@ -27,9 +39,15 @@ export function Hero(props: ProjectInfo) {
             <div className="italic">
               {props.description}
             </div>
-            <div className="font-semibold">
-              {props.dates}
-            </div>
+            {dates.map(di => (
+              <div key={[props.title, di.label].join('-')}>
+                {di.label} <span
+                  className="font-semibold"
+                >
+                  {di.date}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </OptionalAnchor>
