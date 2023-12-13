@@ -13,8 +13,8 @@ function DesktopNav() {
           M. Paul Games
         </Link>
       </div>
-      <Link href="/about" className="mr-4">
-        About
+      <Link href="/contact" className="mr-4">
+        Contact
       </Link>
     </nav>
   )
@@ -40,8 +40,8 @@ function MobileNav() {
           src="/lemon64x64.png"
           alt="lemon logo"
         />
-        <Link href="/about">
-          About
+        <Link href="/contact">
+          Contact
         </Link>
         <img
           className="inline-block h-6"
