@@ -6,7 +6,7 @@ function Background({ img }: {
 }) {
   return (
     <div
-      className="w-full h-full bg-cover bg-center transition-all group-hover:scale-105"
+      className="w-full h-full bg-cover bg-center"
       style={{
         backgroundImage: img ? `url(${img})` : undefined,
       }}
@@ -43,11 +43,14 @@ export function Feature(props: ProjectInfo) {
             </div>
             {dates.map(di => (
               <div key={[props.title, di.label].join('-')}>
-                {di.label} <span
-                  className="font-semibold"
-                >
-                  {di.date}
-                </span>
+                {di.label} &gt; {di.date}
+              </div>
+            ))}
+            {(props.links ?? []).map(li => (
+              <div key={[props.title, li.url].join('-')}>
+                <a href={li.url} className="text-blue-300 font-semibold">
+                  {li.label}
+                </a>
               </div>
             ))}
           </div>

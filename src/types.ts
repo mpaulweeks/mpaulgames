@@ -6,4 +6,8 @@ export type ProjectInfo = {
   dateClosedAlpha?: string;
   dateOpenBeta?: string;
   dateRelease?: string;
+  links?: {
+    label: string;
+    url: string;
+  }[];
 }
