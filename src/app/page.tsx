@@ -1,4 +1,4 @@
-import { Hero } from "@/components/hero";
+import { Feature } from "@/components/feature";
 import { ProjectInfo } from "@/types";
 
 const projects: ProjectInfo[] = [{
@@ -24,7 +24,8 @@ const projects: ProjectInfo[] = [{
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center text-center">
-      {projects.map(p => <Hero {...p} key={p.title} /> )}
+      {projects.map(p => <Feature {...p} key={['feature', p.title].join('-')} /> )}
+      {/* {projects.map(p => <Hero {...p} key={p.title} /> )} */}
     </main>
   )
 }
