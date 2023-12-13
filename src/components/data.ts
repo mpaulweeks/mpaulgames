@@ -9,11 +9,14 @@ export const projects: ProjectInfo[] = [{
   img: `https://about.toughlovearena.com/asset/gallery/720p/gameplay1.jpg`,
   title: `Tough Love Arena`,
   description: `Beginner friendly fighting game`,
-  dateOpenBeta: `2021`,
+  dateEarlyAccess: `2021`,
   dateRelease: `Summer 2024`,
   links: [{
-    label: 'play now',
+    label: 'play on web',
     url: `https://toughlovearena.com`,
+  }, {
+    label: 'buy on steam',
+    url: 'https://store.steampowered.com/app/1807330/Tough_Love_Arena/',
   }, {
     label: 'learn more',
     url: `https://about.toughlovearena.com`,
@@ -24,7 +27,7 @@ export const projects: ProjectInfo[] = [{
   description: `Procedurally generated slide puzzles`,
   dateRelease: `2019`,
   links: [{
-    label: 'play now',
+    label: 'play on web',
     url: `https://snowman.mpaulweeks.com/`,
   }],
 }];

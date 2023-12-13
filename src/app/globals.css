@@ -28,3 +28,15 @@ nav {
   color: black;
   background-color: white;
 }
+
+.notched:after {
+  content: "";
+  position: absolute;
+  margin: -20px;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  background-color: #000;
+}

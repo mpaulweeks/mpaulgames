@@ -18,21 +18,28 @@ const OverlayCSS = `
 absolute top-0 w-full h-full flex flex-row
 justify-center items-center
 md:group-odd:justify-start md:group-even:justify-end
+`;
+
+const AsideCSS = `
+flex flex-col justify-center items-center
+text-white text-xl py-4 px-8
+w-full h-full md:w-[400px] md:mx-[150px]
+
+bg-[#000000c0]
+md:-skew-x-[10deg]
 `
-// from-[#000000c0]
-// from-[33%]
-// to-[34%]
-// md:group-odd:bg-gradient-to-r md:group-even:bg-gradient-to-l
 
 export function Feature(props: ProjectInfo) {
   return (
-    <main className="group relative w-full overflow-hidden" style={{
+    <main className="group relative w-full overflow-hidden tran" style={{
       height: '600px',
     }}>
       <Background img={props.img} />
       <section className={OverlayCSS}>
-        <aside className="text-white text-xl p-4 w-full h-full md:w-1/3 bg-[#000000c0] flex flex-col justify-center items-center">
-          <ProjectBlurb {...props} />
+        <aside className={AsideCSS}>
+          <div className="md:skew-x-[10deg] p-">
+            <ProjectBlurb {...props} />
+          </div>
         </aside>
       </section>
     </main>
