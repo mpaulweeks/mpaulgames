@@ -6,6 +6,7 @@ function DesktopNav() {
       <img
         className="inline-block h-10"
         src="/lemon64x64.png"
+        alt="lemon logo"
       />
       <div className="flex-1">
         <Link href="/">
@@ -29,6 +30,7 @@ function MobileNav() {
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
+          alt="lemon logo"
         />
         <Link href="/">
           Projects
@@ -36,6 +38,7 @@ function MobileNav() {
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
+          alt="lemon logo"
         />
         <Link href="/about">
           About
@@ -43,6 +46,7 @@ function MobileNav() {
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
+          alt="lemon logo"
         />
       </div>
     </nav>
