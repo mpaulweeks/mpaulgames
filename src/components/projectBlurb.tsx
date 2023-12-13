@@ -21,11 +21,13 @@ export function ProjectBlurb(props: ProjectInfo) {
       <div className="italic">
         {props.description}
       </div>
+      <br/>
       {dates.map(di => (
         <div key={[props.title, di.label].join('-')}>
-          {di.label} &gt; {di.date}
+          {di.label} / {di.date}
         </div>
       ))}
+      <br/>
       {(props.links ?? []).map(li => (
         <div key={[props.title, li.url].join('-')}>
           <a href={li.url} className="text-blue-300 font-semibold">

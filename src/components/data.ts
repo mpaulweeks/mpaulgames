@@ -4,13 +4,13 @@ export const projects: ProjectInfo[] = [{
   img: `/assets/newtagfighter.jpg`,
   title: `New Tag Fighter`,
   description: `3v3 tag team fighting game`,
-  dateClosedAlpha: `Coming 2024`,
+  dateClosedAlpha: `Spring 2024`,
 }, {
   img: `https://about.toughlovearena.com/asset/gallery/720p/gameplay1.jpg`,
   title: `Tough Love Arena`,
   description: `Beginner friendly fighting game`,
   dateOpenBeta: `2021`,
-  dateRelease: `Coming 2024`,
+  dateRelease: `Summer 2024`,
   links: [{
     label: 'play now',
     url: `https://toughlovearena.com`,

@@ -14,17 +14,27 @@ function Background({ img }: {
   );
 }
 
+const OverlayCSS = `
+absolute top-0 w-full h-full flex flex-row
+justify-center items-center
+md:group-odd:justify-start md:group-even:justify-end
+`
+// from-[#000000c0]
+// from-[33%]
+// to-[34%]
+// md:group-odd:bg-gradient-to-r md:group-even:bg-gradient-to-l
+
 export function Feature(props: ProjectInfo) {
   return (
-    <section className="group relative w-full overflow-hidden" style={{
+    <main className="group relative w-full overflow-hidden" style={{
       height: '600px',
     }}>
       <Background img={props.img} />
-      <aside className="absolute top-0 w-full h-full bg-gradient-to-r from-black to-transparent bg-opacity-30 flex flex-row justify-start items-center group-even:justify-end group-even:bg-gradient-to-l">
-        <div className="text-white text-xl py-4 px-1/3 px-60">
+      <section className={OverlayCSS}>
+        <aside className="text-white text-xl p-4 w-full h-full md:w-1/3 bg-[#000000c0] flex flex-col justify-center items-center">
           <ProjectBlurb {...props} />
-        </div>
-      </aside>
-    </section>
+        </aside>
+      </section>
+    </main>
   )
 }
