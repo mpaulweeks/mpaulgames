@@ -2,7 +2,7 @@ import { ProjectInfo } from "@/types";
 
 export const projects: ProjectInfo[] = [{
   img: `/assets/newtagfighter_2.jpg`,
-  title: `New Tag Fighter`,
+  title: `"New Tag Fighter"`,
   description: `3v3 tag team fighting game`,
   dateClosedAlpha: `Spring 2024`,
   dateEarlyAccess: `2025`,
