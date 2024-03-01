@@ -5,6 +5,7 @@ export const projects: ProjectInfo[] = [{
   title: `New Tag Fighter`,
   description: `3v3 tag team fighting game`,
   dateClosedAlpha: `Spring 2024`,
+  dateEarlyAccess: `2025`,
   // todo include private playtest link?
   // https://playtest.mpaul.games
 }, {
