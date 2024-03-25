@@ -40,7 +40,16 @@ export const talkDatas: TalkData[] = [{
   title: 'How to Design a Fighting Game',
   event: 'Sakuracon',
   eventUrl: 'https://sakuracon.org/programming/panels/',
-  resources: [],
+  resources: [{
+    label: 'Slideshow',
+    url: 'https://docs.google.com/presentation/d/e/2PACX-1vSkdHnpOlyBnsKVOvqkzTlXXmSbq5hCKsWOnY9wqV8b4ACgmWhsiZigW4Dsa4X0v-P9psei3mJ64RKS/pub?start=false&loop=false&delayms=3000',
+  }, {
+    label: 'What is Rollback Netcode? by Muno',
+    url: 'https://bymuno.com/post/rollback',
+  }, {
+    label: 'Fightin Words: Netcode by Infil',
+    url: 'https://words.infil.net/w02-netcode.html',
+  }],
 }, {
   date: new Date('2023-04-15 18:30 EDT'),
   title: `Designing Fighting Games & How to Balance Post Launch`,
