@@ -55,6 +55,9 @@ export const talkDatas: TalkData[] = [{
   }, {
     label: '8 Frames in 16ms: Rollback Networking in Mortal Kombat and Injustice 2',
     url: 'https://www.youtube.com/watch?v=7jb0FOcImdg',
+  }, {
+    label: 'The Fighting Game Glossary by Infil',
+    url: 'https://glossary.infil.net/',
   }],
 }, {
   date: new Date('2023-04-15 18:30 EDT'),
