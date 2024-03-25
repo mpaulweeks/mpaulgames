@@ -13,6 +13,9 @@ function DesktopNav() {
           M. Paul Games
         </Link>
       </div>
+      <Link href="/talks" className="mr-4">
+        Talks
+      </Link>
       <Link href="/contact" className="mr-4">
         Contact
       </Link>
@@ -40,6 +43,9 @@ function MobileNav() {
           src="/lemon64x64.png"
           alt="lemon logo"
         />
+        <Link href="/talks" className="mr-4">
+          Talks
+        </Link>
         <Link href="/contact">
           Contact
         </Link>
