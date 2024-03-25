@@ -11,3 +11,14 @@ export type ProjectInfo = {
     url: string;
   }[];
 }
+
+export type TalkData = {
+  date: Date;
+  title: string;
+  event: string;
+  eventUrl?: string;
+  resources: {
+    label: string;
+    url: string;
+  }[];
+}

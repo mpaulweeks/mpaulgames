@@ -28,13 +28,17 @@ export function ProjectBlurb(props: ProjectInfo) {
         </div>
       ))}
       <br/>
-      {(props.links ?? []).map(li => (
-        <div key={[props.title, li.url].join('-')}>
-          &gt; <a href={li.url} className="text-blue-300 font-semibold">
-            {li.label}
-          </a>
+      <div className="flex flex-col items-center">
+        <div className="text-left">
+          {(props.links ?? []).map(li => (
+            <div key={[props.title, li.url].join('-')}>
+              &gt; <a href={li.url} className="text-blue-300 font-semibold">
+                {li.label}
+              </a>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </>
   );
 }

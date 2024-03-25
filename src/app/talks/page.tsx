@@ -1,23 +1,5 @@
-
-type TalkData = {
-  date: Date;
-  title: string;
-  event: string;
-  eventUrl?: string;
-  slidesUrl?: string;
-}
-
-const talkDatas: TalkData[] = [{
-  date: new Date('2024-03-29 16:00 PDT'),
-  title: 'How to Design a Fighting Game',
-  event: 'Sakuracon',
-  eventUrl: 'https://sakuracon.org/programming/panels/',
-}, {
-  date: new Date('2023-04-14 15:00 EDT'),
-  title: `Designing Fighting Games & How to Balance Post Launch`,
-  event: 'WaffleGames 6.0',
-  eventUrl: `https://www.egdcollective.org/wafflegames2023`,
-}];
+import { talkDatas } from "@/components/data";
+import { TalkData } from "@/types";
 
 function TalkDisplay({ data }: {
   data: TalkData;
@@ -25,7 +7,7 @@ function TalkDisplay({ data }: {
   return (
     <div>
       <div className="text-2xl">{data.title}</div>
-      <div className="underline">
+      <div className="underline text-xl">
         {data.eventUrl ? (
           <a className='text-blue-600' href={data.eventUrl}>{data.event}</a>
         ) : (
@@ -35,6 +17,15 @@ function TalkDisplay({ data }: {
       <div>
         {data.date.toLocaleString()}
       </div>
+      {data.resources.length > 0 && (
+        <ul className="list-disc text-lg ml-8">
+          {data.resources.map(res => (
+            <li key={res.url}>
+              <a className="text-blue-600" href={res.url}>{res.label}</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
