@@ -44,15 +44,18 @@ export const talkDatas: TalkData[] = [{
     label: 'Slideshow',
     url: 'https://docs.google.com/presentation/d/e/2PACX-1vSkdHnpOlyBnsKVOvqkzTlXXmSbq5hCKsWOnY9wqV8b4ACgmWhsiZigW4Dsa4X0v-P9psei3mJ64RKS/pub?start=false&loop=false&delayms=3000',
   }, {
+    label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
+    url: 'https://www.youtube.com/watch?v=QHHg99hwQGY',
+  }, {
     label: 'What is Rollback Netcode? by Muno',
     url: 'https://bymuno.com/post/rollback',
   }, {
-    label: 'Fightin Words: Netcode by Infil',
-    url: 'https://words.infil.net/w02-netcode.html',
-  }, {
-    label: 'Netcode Architectures Part 2: Rollback by Jay Mattis',
-    url: 'https://www.snapnet.dev/blog/netcode-architectures-part-2-rollback/',
-  }, {
+//   label: 'Fightin Words: Netcode by Infil',
+//   url: 'https://words.infil.net/w02-netcode.html',
+// }, {
+//   label: 'Netcode Architectures Part 2: Rollback by Jay Mattis',
+//   url: 'https://www.snapnet.dev/blog/netcode-architectures-part-2-rollback/',
+// }, {
     label: '8 Frames in 16ms: Rollback Networking in Mortal Kombat and Injustice 2',
     url: 'https://www.youtube.com/watch?v=7jb0FOcImdg',
   }, {
