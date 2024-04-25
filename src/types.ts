@@ -17,7 +17,11 @@ export type TalkData = {
   title: string;
   event: string;
   eventUrl?: string;
-  resources: {
+  resources?: {
+    label: string;
+    url: string;
+  }[];
+  references?: {
     label: string;
     url: string;
   }[];

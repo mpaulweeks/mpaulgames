@@ -43,7 +43,8 @@ export const talkDatas: TalkData[] = [{
   resources: [{
     label: 'Slideshow',
     url: 'https://docs.google.com/presentation/d/e/2PACX-1vSkdHnpOlyBnsKVOvqkzTlXXmSbq5hCKsWOnY9wqV8b4ACgmWhsiZigW4Dsa4X0v-P9psei3mJ64RKS/pub?start=false&loop=false&delayms=3000',
-  }, {
+  }],
+  references: [{
     label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
     url: 'https://www.youtube.com/watch?v=QHHg99hwQGY',
   }, {

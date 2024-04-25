@@ -9,7 +9,7 @@ function TalkDisplay({ data }: {
       <div className="text-2xl">{data.title}</div>
       <div className="underline text-xl">
         {data.eventUrl ? (
-          <a className='text-blue-600' href={data.eventUrl}>{data.event}</a>
+          <a className='text-blue-300' href={data.eventUrl}>{data.event}</a>
         ) : (
           <span>{data.event}</span>
         )}
@@ -17,14 +17,26 @@ function TalkDisplay({ data }: {
       <div>
         {data.date.toLocaleString()}
       </div>
-      {data.resources.length > 0 && (
+      {data.resources && data.resources.length > 0 && (
         <ul className="list-disc text-lg ml-8">
           {data.resources.map(res => (
             <li key={res.url}>
-              <a className="text-blue-600" href={res.url}>{res.label}</a>
+              <a className="text-blue-300" href={res.url}>{res.label}</a>
             </li>
           ))}
         </ul>
+      )}
+      {data.references && data.references.length > 0 && (
+        <>
+          <div>References</div>
+          <ul className="list-disc text-lg ml-8">
+            {data.references.map(res => (
+              <li key={res.url}>
+                <a className="text-blue-300" href={res.url}>{res.label}</a>
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </div>
   );

@@ -12,7 +12,7 @@ export default function About() {
       <p>
         You can contact us by sending an email to
         {' '}
-        <a href={`mailto:${email}`} className="text-blue-600">
+        <a href={`mailto:${email}`} className="text-blue-300">
           {email}
         </a>
       </p>
