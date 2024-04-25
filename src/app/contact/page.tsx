@@ -1,6 +1,6 @@
 import { Logo } from "@/components/logo";
 
-const email = "hello@mpaul.games";
+const email = "contact@mpaul.games";
 
 export default function About() {
   return (
