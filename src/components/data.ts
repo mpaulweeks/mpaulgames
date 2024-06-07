@@ -28,15 +28,6 @@ export const projects: ProjectInfo[] = [{
     label: 'learn more',
     url: `https://about.toughlovearena.com`,
   }],
-}, {
-  img: `/assets/snowman.png`,
-  title: `Snowman Goes Home`,
-  description: `Procedurally generated slide puzzles`,
-  dateRelease: `2019`,
-  links: [{
-    label: 'play on web',
-    url: `https://snowman.mpaulweeks.com/`,
-  }],
 }];
 
 export const talkDatas: TalkData[] = [{
