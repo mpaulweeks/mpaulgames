@@ -8,6 +8,10 @@ export const projects: ProjectInfo[] = [{
   dateEarlyAccess: `2025`,
   // todo include private playtest link?
   // https://playtest.mpaul.games
+  links: [{
+    label: 'join the mailing list',
+    url: 'https://forms.gle/LSc9YWop2oSNqPdAA',
+  }],
 }, {
   img: `https://about.toughlovearena.com/asset/gallery/720p/gameplay1.jpg`,
   title: `Tough Love Arena`,
