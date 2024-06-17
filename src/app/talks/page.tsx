@@ -1,4 +1,4 @@
-import { talkDatas } from '@/components/data';
+import { talkDatas, talkRefs } from '@/components/data';
 import { TalkData } from '@/types';
 
 function TalkDisplay({ data }: { data: TalkData }) {
@@ -14,7 +14,12 @@ function TalkDisplay({ data }: { data: TalkData }) {
           <span>{data.event}</span>
         )}
       </div>
-      <div>{data.date.toLocaleString()}</div>
+      <div>
+        {data.date.toLocaleString(undefined, {
+          dateStyle: 'full',
+          timeStyle: 'short',
+        })}
+      </div>
       {data.resources && data.resources.length > 0 && (
         <ul className="list-disc text-lg ml-8">
           {data.resources.map(res => (
@@ -25,20 +30,6 @@ function TalkDisplay({ data }: { data: TalkData }) {
             </li>
           ))}
         </ul>
-      )}
-      {data.references && data.references.length > 0 && (
-        <>
-          <div>References</div>
-          <ul className="list-disc text-lg ml-8">
-            {data.references.map(res => (
-              <li key={res.url}>
-                <a className="text-blue-300" href={res.url}>
-                  {res.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </>
       )}
     </div>
   );
@@ -60,6 +51,18 @@ export default function Talks() {
           <TalkDisplay key={td.date.getTime()} data={td} />
         ))}
       </div>
+      <div className="text-4xl">References</div>
+      <ul className="list-disc text-lg ml-8">
+        <div className="text-left">
+          {talkRefs.map(res => (
+            <li key={res.url}>
+              <a className="text-blue-300" href={res.url}>
+                {res.label}
+              </a>
+            </li>
+          ))}
+        </div>
+      </ul>
     </main>
   );
 }

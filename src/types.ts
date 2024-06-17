@@ -1,3 +1,8 @@
+export type Link = {
+  label: string;
+  url: string;
+};
+
 export type ProjectInfo = {
   url?: string;
   img?: string;
@@ -6,10 +11,7 @@ export type ProjectInfo = {
   dateClosedAlpha?: string;
   dateEarlyAccess?: string;
   dateRelease?: string;
-  links?: {
-    label: string;
-    url: string;
-  }[];
+  links?: Link[];
 };
 
 export type TalkData = {
@@ -17,12 +19,7 @@ export type TalkData = {
   title: string;
   event: string;
   eventUrl?: string;
-  resources?: {
-    label: string;
-    url: string;
-  }[];
-  references?: {
-    label: string;
-    url: string;
-  }[];
+  resources?: Link[];
 };
+
+export type TalkRef = Link;

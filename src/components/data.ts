@@ -1,4 +1,4 @@
-import { ProjectInfo, TalkData } from '@/types';
+import { ProjectInfo, TalkData, TalkRef } from '@/types';
 
 export const projects: ProjectInfo[] = [
   {
@@ -44,29 +44,11 @@ export const talkDatas: TalkData[] = [
     date: new Date('2024-06-22 14:30 EDT'),
     title: 'How to Design a Fighting Game',
     event: 'Waffle Games 7.0',
+    eventUrl: 'https://www.egdcollective.org/wafflegames2024',
     resources: [
       {
         label: 'Slideshow',
         url: 'https://docs.google.com/presentation/d/e/2PACX-1vRWTv0jZrnigsAvoPzYb9_sVg91WlsFQLT9QaLdWDGW68ZiKip__kQ99TkbJBNYYyWMglfrrXbM6baJ/pub',
-      },
-    ],
-    references: [
-      {
-        label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
-        url: 'https://www.youtube.com/watch?v=QHHg99hwQGY',
-      },
-      {
-        label: 'What is Rollback Netcode? by Muno',
-        url: 'https://bymuno.com/post/rollback',
-      },
-      {
-        label:
-          '8 Frames in 16ms: Rollback Networking in Mortal Kombat and Injustice 2',
-        url: 'https://www.youtube.com/watch?v=7jb0FOcImdg',
-      },
-      {
-        label: 'The Fighting Game Glossary by Infil',
-        url: 'https://glossary.infil.net/',
       },
     ],
   },
@@ -81,36 +63,11 @@ export const talkDatas: TalkData[] = [
         url: 'https://docs.google.com/presentation/d/e/2PACX-1vSkdHnpOlyBnsKVOvqkzTlXXmSbq5hCKsWOnY9wqV8b4ACgmWhsiZigW4Dsa4X0v-P9psei3mJ64RKS/pub',
       },
     ],
-    references: [
-      {
-        label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
-        url: 'https://www.youtube.com/watch?v=QHHg99hwQGY',
-      },
-      {
-        label: 'What is Rollback Netcode? by Muno',
-        url: 'https://bymuno.com/post/rollback',
-      },
-      {
-        //   label: 'Fightin Words: Netcode by Infil',
-        //   url: 'https://words.infil.net/w02-netcode.html',
-        // }, {
-        //   label: 'Netcode Architectures Part 2: Rollback by Jay Mattis',
-        //   url: 'https://www.snapnet.dev/blog/netcode-architectures-part-2-rollback/',
-        // }, {
-        label:
-          '8 Frames in 16ms: Rollback Networking in Mortal Kombat and Injustice 2',
-        url: 'https://www.youtube.com/watch?v=7jb0FOcImdg',
-      },
-      {
-        label: 'The Fighting Game Glossary by Infil',
-        url: 'https://glossary.infil.net/',
-      },
-    ],
   },
   {
     date: new Date('2023-04-15 18:30 EDT'),
     title: `Designing Fighting Games & How to Balance Post Launch`,
-    event: 'Waffle Games',
+    event: 'Waffle Games 6.0',
     eventUrl: `https://www.egdcollective.org/wafflegames2023`,
     resources: [
       {
@@ -142,5 +99,33 @@ export const talkDatas: TalkData[] = [
         url: 'https://www.youtube.com/watch?v=AyYXqth8RZg',
       },
     ],
+  },
+];
+
+export const talkRefs: TalkRef[] = [
+  {
+    label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
+    url: 'https://www.youtube.com/watch?v=QHHg99hwQGY',
+  },
+  {
+    label: 'What is Rollback Netcode? by Muno',
+    url: 'https://bymuno.com/post/rollback',
+  },
+  {
+    label:
+      '8 Frames in 16ms: Rollback Networking in Mortal Kombat and Injustice 2',
+    url: 'https://www.youtube.com/watch?v=7jb0FOcImdg',
+  },
+  {
+    label: 'The Fighting Game Glossary by Infil',
+    url: 'https://glossary.infil.net/',
+  },
+  {
+    label: 'Fightin Words: Netcode by Infil',
+    url: 'https://words.infil.net/w02-netcode.html',
+  },
+  {
+    label: 'Netcode Architectures Part 2: Rollback by Jay Mattis',
+    url: 'https://www.snapnet.dev/blog/netcode-architectures-part-2-rollback/',
   },
 ];
