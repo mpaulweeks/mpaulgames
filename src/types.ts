@@ -10,7 +10,7 @@ export type ProjectInfo = {
     label: string;
     url: string;
   }[];
-}
+};
 
 export type TalkData = {
   date: Date;
@@ -25,4 +25,4 @@ export type TalkData = {
     label: string;
     url: string;
   }[];
-}
+};

@@ -1,8 +1,10 @@
-import { ConditionalWrapper } from "./conditionalWrapper";
+import { ConditionalWrapper } from './conditionalWrapper';
 
-export function OptionalAnchor(props: React.PropsWithChildren & {
-  href?: string;
-}) {
+export function OptionalAnchor(
+  props: React.PropsWithChildren & {
+    href?: string;
+  },
+) {
   return (
     <ConditionalWrapper
       condition={!!props.href}

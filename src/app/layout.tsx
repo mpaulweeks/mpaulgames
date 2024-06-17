@@ -1,21 +1,21 @@
-import { NavBar } from '@/components/navbar'
-import type { Metadata } from 'next'
-import { Roboto_Flex } from 'next/font/google'
-import './globals.css'
+import { NavBar } from '@/components/navbar';
+import type { Metadata } from 'next';
+import { Roboto_Flex } from 'next/font/google';
+import './globals.css';
 
 const inter = Roboto_Flex({
   subsets: ['latin'],
-})
+});
 
 export const metadata: Metadata = {
   title: 'M. Paul Games',
   description: '🍋🕹️',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -27,5 +27,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }

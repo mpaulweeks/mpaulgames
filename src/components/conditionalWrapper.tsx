@@ -1,7 +1,11 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode } from 'react';
 
-export const ConditionalWrapper = ({ condition, wrapper, children }: {
+export const ConditionalWrapper = ({
+  condition,
+  wrapper,
+  children,
+}: {
   condition: boolean;
   wrapper: (children: ReactNode) => ReactElement;
   children: ReactNode;
-}) => condition ? wrapper(children) : children;
+}) => (condition ? wrapper(children) : children);

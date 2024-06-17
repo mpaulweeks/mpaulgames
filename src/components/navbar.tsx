@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 function DesktopNav() {
   return (
@@ -9,9 +9,7 @@ function DesktopNav() {
         alt="lemon logo"
       />
       <div className="flex-1">
-        <Link href="/">
-          M. Paul Games
-        </Link>
+        <Link href="/">M. Paul Games</Link>
       </div>
       <Link href="/talks" className="mr-4">
         Talks
@@ -20,40 +18,32 @@ function DesktopNav() {
         Contact
       </Link>
     </nav>
-  )
+  );
 }
 
 function MobileNav() {
   return (
     <nav className="flex flex-col justify-center items-center p-4 gap-2 font-bold">
-      <div className="text-2xl">
-        M. Paul Games
-      </div>
+      <div className="text-2xl">M. Paul Games</div>
       <div className="flex flex-row justify-center items-center gap-2">
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
           alt="lemon logo"
         />
-        <Link href="/">
-          Projects
-        </Link>
+        <Link href="/">Projects</Link>
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
           alt="lemon logo"
         />
-        <Link href="/talks">
-          Talks
-        </Link>
+        <Link href="/talks">Talks</Link>
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
           alt="lemon logo"
         />
-        <Link href="/contact">
-          Contact
-        </Link>
+        <Link href="/contact">Contact</Link>
         <img
           className="inline-block h-6"
           src="/lemon64x64.png"
@@ -61,7 +51,7 @@ function MobileNav() {
         />
       </div>
     </nav>
-  )
+  );
 }
 
 export function NavBar() {
@@ -78,5 +68,5 @@ export function NavBar() {
         <MobileNav />
       </div>
     </section>
-  )
+  );
 }

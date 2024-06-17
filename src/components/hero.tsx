@@ -1,10 +1,8 @@
-import { ProjectInfo } from "@/types";
-import { OptionalAnchor } from "./optionalAnchor";
-import { ProjectBlurb } from "./projectBlurb";
+import { ProjectInfo } from '@/types';
+import { OptionalAnchor } from './optionalAnchor';
+import { ProjectBlurb } from './projectBlurb';
 
-function Background({ img }: {
-  img: string | undefined;
-}) {
+function Background({ img }: { img: string | undefined }) {
   return (
     <div
       className="w-full h-full bg-cover bg-center odd:bg-red-200 even:bg-blue-200 transition-all group-hover:scale-105"
@@ -27,5 +25,5 @@ export function Hero(props: ProjectInfo) {
         </div>
       </OptionalAnchor>
     </section>
-  )
+  );
 }

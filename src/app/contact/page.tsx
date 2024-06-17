@@ -1,6 +1,6 @@
-import { Logo } from "@/components/logo";
+import { Logo } from '@/components/logo';
 
-const email = "contact@mpaul.games";
+const email = 'contact@mpaul.games';
 
 export default function About() {
   return (
@@ -10,12 +10,11 @@ export default function About() {
         M. Paul Games LLC develops accessible games for the browser.
       </p>
       <p>
-        You can contact us by sending an email to
-        {' '}
+        You can contact us by sending an email to{' '}
         <a href={`mailto:${email}`} className="text-blue-300">
           {email}
         </a>
       </p>
     </main>
-  )
+  );
 }

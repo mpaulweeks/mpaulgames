@@ -1,9 +1,7 @@
-import { ProjectInfo } from "@/types";
-import { ProjectBlurb } from "./projectBlurb";
+import { ProjectInfo } from '@/types';
+import { ProjectBlurb } from './projectBlurb';
 
-function Background({ img }: {
-  img: string | undefined;
-}) {
+function Background({ img }: { img: string | undefined }) {
   return (
     <div
       className="w-full h-full bg-cover bg-center"
@@ -27,14 +25,17 @@ w-full h-full md:w-[400px] md:mx-[150px]
 
 bg-[#000000c0]
 md:-skew-x-[10deg]
-`
+`;
 
 export function Feature(props: ProjectInfo) {
   return (
-    <main className="group relative w-full overflow-hidden tran" style={{
-      minHeight: '600px',
-      height: '60vh',
-    }}>
+    <main
+      className="group relative w-full overflow-hidden tran"
+      style={{
+        minHeight: '600px',
+        height: '60vh',
+      }}
+    >
       <Background img={props.img} />
       <section className={OverlayCSS}>
         <aside className={AsideCSS}>
@@ -44,5 +45,5 @@ export function Feature(props: ProjectInfo) {
         </aside>
       </section>
     </main>
-  )
+  );
 }
