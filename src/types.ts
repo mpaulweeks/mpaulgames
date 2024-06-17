@@ -16,6 +16,7 @@ export type ProjectInfo = {
 
 export type TalkData = {
   date: Date;
+  timeZone: string;
   title: string;
   event: string;
   eventUrl?: string;

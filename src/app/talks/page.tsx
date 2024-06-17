@@ -16,6 +16,7 @@ function TalkDisplay({ data }: { data: TalkData }) {
       </div>
       <div>
         {data.date.toLocaleString(undefined, {
+          timeZone: data.timeZone,
           dateStyle: 'full',
           timeStyle: 'short',
         })}

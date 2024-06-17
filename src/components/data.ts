@@ -42,6 +42,7 @@ export const projects: ProjectInfo[] = [
 export const talkDatas: TalkData[] = [
   {
     date: new Date('2024-06-22 14:30 EDT'),
+    timeZone: 'America/New_York',
     title: 'How to Design a Fighting Game',
     event: 'Waffle Games 7.0',
     eventUrl: 'https://www.egdcollective.org/wafflegames2024',
@@ -54,6 +55,7 @@ export const talkDatas: TalkData[] = [
   },
   {
     date: new Date('2024-03-29 16:00 PDT'),
+    timeZone: 'America/Los_Angeles',
     title: 'How to Design a Fighting Game',
     event: 'Sakuracon',
     eventUrl: 'https://sakuracon.org/programming/panels/',
@@ -66,6 +68,7 @@ export const talkDatas: TalkData[] = [
   },
   {
     date: new Date('2023-04-15 18:30 EDT'),
+    timeZone: 'America/New_York',
     title: `Designing Fighting Games & How to Balance Post Launch`,
     event: 'Waffle Games 6.0',
     eventUrl: `https://www.egdcollective.org/wafflegames2023`,
@@ -78,6 +81,7 @@ export const talkDatas: TalkData[] = [
   },
   {
     date: new Date('2022-08-05 14:00 PDT'),
+    timeZone: 'America/Los_Angeles',
     title: 'Tough Love Arena - Developer Panel',
     event: 'EVO',
     eventUrl: 'https://evo.gg',
@@ -90,6 +94,7 @@ export const talkDatas: TalkData[] = [
   },
   {
     date: new Date('2022-08-05 16:00 PDT'),
+    timeZone: 'America/Los_Angeles',
     title: 'State of the Indie FGC',
     event: 'EVO',
     eventUrl: 'https://evo.gg',
