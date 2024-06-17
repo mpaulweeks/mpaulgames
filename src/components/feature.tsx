@@ -32,7 +32,8 @@ md:-skew-x-[10deg]
 export function Feature(props: ProjectInfo) {
   return (
     <main className="group relative w-full overflow-hidden tran" style={{
-      height: '600px',
+      minHeight: '600px',
+      height: '60vh',
     }}>
       <Background img={props.img} />
       <section className={OverlayCSS}>

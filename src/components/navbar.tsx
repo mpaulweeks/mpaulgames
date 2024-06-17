@@ -43,9 +43,14 @@ function MobileNav() {
           src="/lemon64x64.png"
           alt="lemon logo"
         />
-        <Link href="/talks" className="mr-4">
+        <Link href="/talks">
           Talks
         </Link>
+        <img
+          className="inline-block h-6"
+          src="/lemon64x64.png"
+          alt="lemon logo"
+        />
         <Link href="/contact">
           Contact
         </Link>
