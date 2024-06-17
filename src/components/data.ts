@@ -31,13 +31,34 @@ export const projects: ProjectInfo[] = [{
 }];
 
 export const talkDatas: TalkData[] = [{
+  date: new Date('2024-06-22 14:30 EDT'),
+  title: 'How to Design a Fighting Game',
+  event: 'Waffle Games 7.0',
+  resources: [{
+    label: 'Slideshow',
+    url: 'https://docs.google.com/presentation/d/e/2PACX-1vRWTv0jZrnigsAvoPzYb9_sVg91WlsFQLT9QaLdWDGW68ZiKip__kQ99TkbJBNYYyWMglfrrXbM6baJ/pub',
+  }],
+  references: [{
+    label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
+    url: 'https://www.youtube.com/watch?v=QHHg99hwQGY',
+  }, {
+    label: 'What is Rollback Netcode? by Muno',
+    url: 'https://bymuno.com/post/rollback',
+  }, {
+    label: '8 Frames in 16ms: Rollback Networking in Mortal Kombat and Injustice 2',
+    url: 'https://www.youtube.com/watch?v=7jb0FOcImdg',
+  }, {
+    label: 'The Fighting Game Glossary by Infil',
+    url: 'https://glossary.infil.net/',
+  }],
+}, {  
   date: new Date('2024-03-29 16:00 PDT'),
   title: 'How to Design a Fighting Game',
   event: 'Sakuracon',
   eventUrl: 'https://sakuracon.org/programming/panels/',
   resources: [{
     label: 'Slideshow',
-    url: 'https://docs.google.com/presentation/d/e/2PACX-1vSkdHnpOlyBnsKVOvqkzTlXXmSbq5hCKsWOnY9wqV8b4ACgmWhsiZigW4Dsa4X0v-P9psei3mJ64RKS/pub?start=false&loop=false&delayms=3000',
+    url: 'https://docs.google.com/presentation/d/e/2PACX-1vSkdHnpOlyBnsKVOvqkzTlXXmSbq5hCKsWOnY9wqV8b4ACgmWhsiZigW4Dsa4X0v-P9psei3mJ64RKS/pub',
   }],
   references: [{
     label: `Magic: the Gathering: 20 Years, 20 Lessons Learned`,
