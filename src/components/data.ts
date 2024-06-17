@@ -2,7 +2,7 @@ import { ProjectInfo, TalkData, TalkRef } from '@/types';
 
 export const projects: ProjectInfo[] = [
   {
-    img: `/assets/newtagfighter_2.jpg`,
+    img: `/assets/newtagfighter_4.jpg`,
     title: `Untitled Tag Fighting Game`,
     description: `3v3 tag team fighting game`,
     dateClosedAlpha: `2024`,
