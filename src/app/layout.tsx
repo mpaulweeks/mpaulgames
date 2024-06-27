@@ -1,5 +1,5 @@
 import { NavBar } from '@/components/navbar';
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Roboto_Flex } from 'next/font/google';
 import './globals.css';
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-C39P4SNJQ5" />
+      <GoogleAnalytics gaId="G-C39P4SNJQ5" />
       <head>
         <link rel="shortcut icon" href="/favicon.png" />
       </head>
