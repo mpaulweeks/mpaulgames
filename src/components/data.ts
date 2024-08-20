@@ -3,7 +3,7 @@ import { ProjectInfo, TalkData, TalkRef } from '@/types';
 export const projects: ProjectInfo[] = [
   {
     img: `/assets/newtagfighter_4.jpg`,
-    title: `Starpop Danger Club`,
+    title: `Scramble Heart City`,
     description: `3v3 tag team fighting game`,
     dateClosedAlpha: `2024`,
     dateEarlyAccess: `2025`,
