@@ -36,7 +36,7 @@ function TalkDisplay({ data }: { data: TalkData }) {
   );
 }
 
-export default function Talks() {
+export default function TalksPage() {
   const sortedTalks = talkDatas
     .concat()
     .sort((a, b) => (a.date.getTime() < b.date.getTime() ? -1 : 1))

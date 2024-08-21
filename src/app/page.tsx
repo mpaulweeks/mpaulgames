@@ -1,3 +1,3 @@
-import HomeV2 from './v2/page';
+import ProjectsPage from './projects/page';
 
-export default HomeV2;
+export default ProjectsPage;

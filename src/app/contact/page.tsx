@@ -7,7 +7,8 @@ export default function About() {
     <main className="flex flex-col justify-center items-center text-center gap-4 p-8">
       <Logo src="/paul.png" />
       <p className="text-xl">
-        M. Paul Games LLC develops accessible games for the browser.
+        M. Paul Games is an indie studio that develops accessible games for the
+        browser.
       </p>
       <p>
         You can contact us by sending an email to{' '}
