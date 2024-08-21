@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   content: [
@@ -13,8 +14,23 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      textShadow: {
+        sm: '0.1em 0.1em black',
+        none: '0 0 var(--tw-shadow-color)',
+      },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': value => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') },
+      );
+    }),
+  ],
+};
+export default config;

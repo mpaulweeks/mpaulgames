@@ -23,7 +23,11 @@ flex flex-col justify-center items-center
 text-white text-xl py-4 px-8
 w-full h-full md:w-[400px] md:mx-[150px]
 
-bg-[#000000c0]
+text-shadow-sm
+md:text-shadow-none
+
+bg-[#00000080]
+md:bg-[#000000c0]
 md:-skew-x-[10deg]
 `;
 
