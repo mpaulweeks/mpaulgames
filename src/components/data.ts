@@ -10,6 +10,10 @@ export const projects: ProjectInfo[] = [
     // todo include private playtest link?
     // https://playtest.mpaul.games
     links: [
+      // {
+      //   label: 'join the Discord',
+      //   url: 'https://discord.gg/6hbrfUgZJB',
+      // },
       {
         label: 'join the mailing list',
         url: 'https://forms.gle/LSc9YWop2oSNqPdAA',
