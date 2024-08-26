@@ -2,7 +2,8 @@ import { ProjectInfo, TalkData, TalkRef } from '@/types';
 
 export const projects: ProjectInfo[] = [
   {
-    img: `/assets/newtagfighter_4.jpg`,
+    heroSrc: `/assets/newtagfighter_4.jpg`,
+    logoSrc: `/assets/scramble_logo.png`,
     title: `Scramble Heart City`,
     description: `3v3 tag team fighting game`,
     dateClosedAlpha: `2024`,
@@ -21,7 +22,8 @@ export const projects: ProjectInfo[] = [
     ],
   },
   {
-    img: `https://about.toughlovearena.com/asset/gallery/720p/gameplay1.jpg`,
+    heroSrc: `/assets/tla_hero.jpg`,
+    logoSrc: `/assets/tla_logo_vert.png`,
     title: `Tough Love Arena`,
     description: `Beginner friendly fighting game`,
     dateEarlyAccess: `2021`,

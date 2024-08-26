@@ -40,7 +40,7 @@ export function Feature(props: ProjectInfo) {
         height: '60vh',
       }}
     >
-      <Background img={props.img} />
+      <Background img={props.heroSrc} />
       <section className={OverlayCSS}>
         <aside className={AsideCSS}>
           <div className="md:skew-x-[10deg] p-">

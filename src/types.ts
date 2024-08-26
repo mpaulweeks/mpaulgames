@@ -5,7 +5,8 @@ export type Link = {
 
 export type ProjectInfo = {
   url?: string;
-  img?: string;
+  heroSrc?: string;
+  logoSrc?: string;
   title: string;
   description: string;
   dateClosedAlpha?: string;

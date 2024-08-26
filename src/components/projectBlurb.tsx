@@ -17,7 +17,13 @@ export function ProjectBlurb(props: ProjectInfo) {
     .flatMap(e => (e ? [e] : []));
   return (
     <>
-      <div className="text-2xl font-bold">{props.title}</div>
+      <div className="text-2xl font-bold text-center">
+        {props.logoSrc ? (
+          <img src={props.logoSrc} alt={props.title} className="h-[8em]" />
+        ) : (
+          props.title
+        )}
+      </div>
       <div className="italic">{props.description}</div>
       <br />
       {dates.map(di => (
