@@ -16,9 +16,13 @@ export const projects: ProjectInfo[] = [
         url: 'https://discord.gg/6hbrfUgZJB',
       },
       {
-        label: 'join the mailing list',
-        url: 'https://forms.gle/LSc9YWop2oSNqPdAA',
+        label: 'learn more',
+        url: 'https://scrambleheart.city',
       },
+      // {
+      //   label: 'join the mailing list',
+      //   url: 'https://forms.gle/LSc9YWop2oSNqPdAA',
+      // },
     ],
   },
   {
