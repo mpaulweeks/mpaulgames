@@ -51,6 +51,19 @@ export const projects: ProjectInfo[] = [
 
 export const talkDatas: TalkData[] = [
   {
+    date: new Date('2024-11-30 12:00 EDT'),
+    timeZone: 'America/New_York',
+    title: 'How to Design a Fighting Game',
+    event: 'Indie Game Academy',
+    eventUrl: 'https://indiegameacademy.com/',
+    resources: [
+      {
+        label: 'Slideshow',
+        url: 'https://docs.google.com/presentation/d/e/2PACX-1vRal2IlLcIm5_o-HIk_pIQhyrPtKLOIFOyYQPskyQQjrTNP86JC2nxAF4Wb1GQjGuJ5mtaE15qRM3wv/pub',
+      },
+    ],
+  },
+  {
     date: new Date('2024-06-22 14:30 EDT'),
     timeZone: 'America/New_York',
     title: 'How to Design a Fighting Game',
