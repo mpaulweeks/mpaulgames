@@ -51,7 +51,7 @@ export const projects: ProjectInfo[] = [
 
 export const talkDatas: TalkData[] = [
   {
-    date: new Date('2024-11-30 12:00 EDT'),
+    date: new Date('2024-11-30 13:00 EDT'),
     timeZone: 'America/New_York',
     title: 'How to Design a Fighting Game',
     event: 'Indie Game Academy',
