@@ -61,6 +61,10 @@ export const talkDatas: TalkData[] = [
         label: 'Slideshow',
         url: 'https://docs.google.com/presentation/d/e/2PACX-1vRal2IlLcIm5_o-HIk_pIQhyrPtKLOIFOyYQPskyQQjrTNP86JC2nxAF4Wb1GQjGuJ5mtaE15qRM3wv/pub',
       },
+      {
+        label: 'Stream recording',
+        url: 'https://www.youtube.com/watch?v=5jU7w20XUHs',
+      },
     ],
   },
   {
