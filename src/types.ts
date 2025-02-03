@@ -11,7 +11,8 @@ export type ProjectInfo = {
   description: string;
   dateClosedAlpha?: string;
   dateEarlyAccess?: string;
-  dateRelease?: string;
+  dateHopefulLaunch?: string;
+  dateReleased?: string;
   links?: Link[];
 };
 

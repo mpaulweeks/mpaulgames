@@ -8,9 +8,10 @@ type DateInfo = {
 export function ProjectBlurb(props: ProjectInfo) {
   const dates = (
     [
-      { label: '', date: props.dateRelease },
-      { label: 'Early Access //', date: props.dateEarlyAccess },
-      { label: 'Closed Alpha //', date: props.dateClosedAlpha },
+      { label: 'Released', date: props.dateReleased },
+      { label: 'Estimated Launch', date: props.dateHopefulLaunch },
+      { label: 'Early Access', date: props.dateEarlyAccess },
+      { label: 'Closed Alpha', date: props.dateClosedAlpha },
     ] satisfies Partial<DateInfo>[]
   )
     .map(d => (d.date ? (d as DateInfo) : undefined))
@@ -28,7 +29,7 @@ export function ProjectBlurb(props: ProjectInfo) {
       <br />
       {dates.map(di => (
         <div key={[props.title, di.label].join('-')}>
-          {di.label} {di.date}
+          {di.label} | {di.date}
         </div>
       ))}
       <br />

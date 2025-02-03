@@ -7,7 +7,8 @@ export const projects: ProjectInfo[] = [
     title: `Scramble Heart City`,
     description: `3v3 tag team fighting game`,
     dateClosedAlpha: `2024`,
-    dateEarlyAccess: `2025`,
+    dateEarlyAccess: `2026`,
+    dateHopefulLaunch: `2027`,
     // todo include private playtest link?
     // https://playtest.mpaul.games
     links: [
@@ -31,7 +32,7 @@ export const projects: ProjectInfo[] = [
     title: `Tough Love Arena`,
     description: `Beginner friendly fighting game`,
     dateEarlyAccess: `2021`,
-    dateRelease: `Late 2024`,
+    dateHopefulLaunch: `2025`,
     links: [
       {
         label: 'play on web',
