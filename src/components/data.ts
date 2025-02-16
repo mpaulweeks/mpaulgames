@@ -13,6 +13,10 @@ export const projects: ProjectInfo[] = [
     // https://playtest.mpaul.games
     links: [
       {
+        label: 'wishlist on Steam',
+        url: 'https://store.steampowered.com/app/3041800/Scramble_Heart_City/',
+      },
+      {
         label: 'join the Discord',
         url: 'https://discord.gg/6hbrfUgZJB',
       },
@@ -39,7 +43,7 @@ export const projects: ProjectInfo[] = [
         url: `https://toughlovearena.com`,
       },
       {
-        label: 'buy on steam',
+        label: 'buy on Steam',
         url: 'https://store.steampowered.com/app/1807330/Tough_Love_Arena/',
       },
       {
