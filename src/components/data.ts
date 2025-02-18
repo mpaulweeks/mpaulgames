@@ -56,6 +56,18 @@ export const projects: ProjectInfo[] = [
 
 export const talkDatas: TalkData[] = [
   {
+    date: new Date('2025-02-19 18:00 EDT'),
+    timeZone: 'America/New_York',
+    title: 'Fighting in the Browser',
+    event: 'Gumbo Show & Tell',
+    resources: [
+      {
+        label: 'Slideshow',
+        url: 'https://docs.google.com/presentation/d/1sXWzXE-8hPDU2RrQDUmlQ4u6bjq6gdwgNhyhE5n-5h4/edit?usp=sharing',
+      },
+    ],
+  },
+  {
     date: new Date('2024-11-30 13:00 EDT'),
     timeZone: 'America/New_York',
     title: 'How to Design a Fighting Game',
