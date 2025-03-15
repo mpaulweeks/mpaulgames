@@ -60,6 +60,7 @@ export const talkDatas: TalkData[] = [
     timeZone: 'America/New_York',
     title: 'Fighting in the Browser',
     event: 'Gumbo Show & Tell',
+    eventUrl: 'https://gumbonyc.org/',
     resources: [
       {
         label: 'Slideshow',
