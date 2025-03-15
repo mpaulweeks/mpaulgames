@@ -1,5 +1,7 @@
 import { ProjectInfo, TalkData, TalkRef } from '@/types';
 
+export const CompanyLogo = '/paul.png';
+
 export const projects: ProjectInfo[] = [
   {
     heroSrc: `/assets/newtagfighter_4.jpg`,

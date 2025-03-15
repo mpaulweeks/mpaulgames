@@ -1,13 +1,10 @@
 import Link from 'next/link';
+import { CompanyLogo } from './data';
 
 function DesktopNav() {
   return (
     <nav className="flex flex-row justify-center items-center p-4 text-lg gap-4 font-bold">
-      <img
-        className="inline-block h-10"
-        src="/lemon64x64.png"
-        alt="lemon logo"
-      />
+      <img className="inline-block h-10" src={CompanyLogo} alt="lemon logo" />
       <div className="flex-1">
         <Link href="/">M. Paul Games</Link>
       </div>
@@ -26,29 +23,11 @@ function MobileNav() {
     <nav className="flex flex-col justify-center items-center p-4 gap-2 font-bold">
       <div className="text-2xl">M. Paul Games</div>
       <div className="flex flex-row justify-center items-center gap-2">
-        <img
-          className="inline-block h-6"
-          src="/lemon64x64.png"
-          alt="lemon logo"
-        />
         <Link href="/">Projects</Link>
-        <img
-          className="inline-block h-6"
-          src="/lemon64x64.png"
-          alt="lemon logo"
-        />
+        {'•'}
         <Link href="/talks">Talks</Link>
-        <img
-          className="inline-block h-6"
-          src="/lemon64x64.png"
-          alt="lemon logo"
-        />
+        {'•'}
         <Link href="/contact">Contact</Link>
-        <img
-          className="inline-block h-6"
-          src="/lemon64x64.png"
-          alt="lemon logo"
-        />
       </div>
     </nav>
   );
