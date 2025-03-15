@@ -1,6 +1,6 @@
 import { ProjectInfo, TalkData, TalkRef } from '@/types';
 
-export const CompanyLogo = '/paul.png';
+export const CompanyLogo = '/paul_300x300_crop.png';
 
 export const projects: ProjectInfo[] = [
   {

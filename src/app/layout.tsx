@@ -10,7 +10,7 @@ const inter = Roboto_Flex({
 
 export const metadata: Metadata = {
   title: 'M. Paul Games',
-  description: '🍋🕹️',
+  description: 'Learn more about M. Paul Games',
 };
 
 export default function RootLayout({
