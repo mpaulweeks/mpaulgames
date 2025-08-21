@@ -4,13 +4,12 @@ export const CompanyLogo = '/paul_300x300_crop.png';
 
 export const projects: ProjectInfo[] = [
   {
-    heroSrc: `/assets/newtagfighter_4.jpg`,
+    heroSrc: `/assets/shc_1.jpg`,
     logoSrc: `/assets/scramble_logo.png`,
     title: `Scramble Heart City`,
     description: `3v3 tag team fighting game`,
-    dateClosedAlpha: `2024`,
-    dateEarlyAccess: `2026`,
-    dateHopefulLaunch: `2027`,
+    dateClosedAlpha: `2025`,
+    dateHopefulLaunch: `2026`,
     // todo include private playtest link?
     // https://playtest.mpaul.games
     links: [
