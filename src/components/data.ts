@@ -54,8 +54,21 @@ export const projects: ProjectInfo[] = [
     ],
   },
 ];
-
 export const talkDatas: TalkData[] = [
+  {
+    date: new Date('2025-08-23 14:15 EDT'),
+    timeZone: 'America/New_York',
+    title: 'How to Design a Fighting Game',
+    event: 'Anime NYC',
+    eventUrl:
+      'https://animenyc.com/programming/#/event/how-to-design-a-fighting-game',
+    resources: [
+      {
+        label: 'Slideshow',
+        url: 'https://docs.google.com/presentation/d/1RwvkLXTgdlhFkg6llKDseYNbLZC-uXyR4bQNxRIvrFc/',
+      },
+    ],
+  },
   {
     date: new Date('2025-02-19 18:00 EDT'),
     timeZone: 'America/New_York',
