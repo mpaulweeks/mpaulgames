@@ -192,4 +192,8 @@ export const talkRefs: TalkRef[] = [
     label: 'Netcode Architectures Part 2: Rollback by Jay Mattis',
     url: 'https://www.snapnet.dev/blog/netcode-architectures-part-2-rollback/',
   },
+  {
+    label: 'Every Fighting Game Type Explained by Core-A Gaming',
+    url: 'https://www.youtube.com/watch?v=BDo60G66pVA',
+  },
 ];
