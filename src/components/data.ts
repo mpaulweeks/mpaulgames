@@ -58,7 +58,7 @@ export const talkDatas: TalkData[] = [
   {
     date: new Date('2025-08-23 14:15 EDT'),
     timeZone: 'America/New_York',
-    title: 'How to Design a Fighting Game',
+    title: 'How to Design a Fighting Game (v3)',
     event: 'Anime NYC',
     eventUrl:
       'https://animenyc.com/programming/#/event/how-to-design-a-fighting-game',
@@ -66,6 +66,10 @@ export const talkDatas: TalkData[] = [
       {
         label: 'Slideshow',
         url: 'https://docs.google.com/presentation/d/1RwvkLXTgdlhFkg6llKDseYNbLZC-uXyR4bQNxRIvrFc/',
+      },
+      {
+        label: 'Live Recording',
+        url: 'https://www.youtube.com/watch?v=H0rJZjWWlq4',
       },
     ],
   },
@@ -85,7 +89,7 @@ export const talkDatas: TalkData[] = [
   {
     date: new Date('2024-11-30 13:00 EDT'),
     timeZone: 'America/New_York',
-    title: 'How to Design a Fighting Game',
+    title: 'How to Design a Fighting Game (v2)',
     event: 'Indie Game Academy',
     eventUrl: 'https://indiegameacademy.com/',
     resources: [
@@ -94,7 +98,7 @@ export const talkDatas: TalkData[] = [
         url: 'https://docs.google.com/presentation/d/e/2PACX-1vRal2IlLcIm5_o-HIk_pIQhyrPtKLOIFOyYQPskyQQjrTNP86JC2nxAF4Wb1GQjGuJ5mtaE15qRM3wv/pub',
       },
       {
-        label: 'Stream recording',
+        label: 'Stream Recording',
         url: 'https://www.youtube.com/watch?v=5jU7w20XUHs',
       },
     ],
@@ -102,7 +106,7 @@ export const talkDatas: TalkData[] = [
   {
     date: new Date('2024-06-22 14:30 EDT'),
     timeZone: 'America/New_York',
-    title: 'How to Design a Fighting Game',
+    title: 'How to Design a Fighting Game (v2)',
     event: 'Waffle Games 7.0',
     eventUrl: 'https://www.egdcollective.org/wafflegames2024',
     resources: [
