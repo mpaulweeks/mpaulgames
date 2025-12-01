@@ -56,6 +56,23 @@ export const projects: ProjectInfo[] = [
 ];
 export const talkDatas: TalkData[] = [
   {
+    date: new Date('2025-11-19 14:30 EDT'),
+    timeZone: 'America/New_York',
+    title: 'How to Design a Fighting Game (v4)',
+    event: 'IGDA @ New Jersey Institute of Technology',
+    eventUrl: 'https://www.instagram.com/p/DRLIPMVkoNe/',
+    resources: [
+      {
+        label: 'Slideshow',
+        url: 'https://docs.google.com/presentation/d/18B8IIibOOeBH-7L-54LNxLPnq6AFjoBWMcnYO7N9MFU/',
+      },
+      {
+        label: 'Stream Recording',
+        url: 'https://www.youtube.com/watch?v=aM2TiKGHHRk',
+      },
+    ],
+  },
+  {
     date: new Date('2025-08-23 14:15 EDT'),
     timeZone: 'America/New_York',
     title: 'How to Design a Fighting Game (v3)',
