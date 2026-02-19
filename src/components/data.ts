@@ -56,6 +56,19 @@ export const projects: ProjectInfo[] = [
 ];
 export const talkDatas: TalkData[] = [
   {
+    date: new Date('2026-02-17 18:00 EDT'),
+    timeZone: 'America/New_York',
+    title: 'How to Design a Fighting Game (v5)',
+    event: 'IGDA @ Coexist',
+    eventUrl: 'https://www.instagram.com/p/DU1RlNpAfzj/',
+    resources: [
+      {
+        label: 'Slideshow',
+        url: 'https://docs.google.com/presentation/d/10QnN6CDV7H3_XjigWLAe9Yg5jZGQeIkAumuP-FuV5s4/',
+      },
+    ],
+  },
+  {
     date: new Date('2025-11-19 14:30 EDT'),
     timeZone: 'America/New_York',
     title: 'How to Design a Fighting Game (v4)',
