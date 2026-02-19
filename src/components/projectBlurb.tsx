@@ -18,7 +18,7 @@ export function ProjectBlurb(props: ProjectInfo) {
     .flatMap(e => (e ? [e] : []));
   return (
     <>
-      <div className="text-2xl font-bold text-center">
+      <div className="text-2xl font-bold flex flex-col items-center">
         {props.logoSrc ? (
           <img src={props.logoSrc} alt={props.title} className="h-[8em]" />
         ) : (

@@ -5,7 +5,7 @@ export const CompanyLogo = '/paul_300x300_crop.png';
 export const projects: ProjectInfo[] = [
   {
     heroSrc: `/assets/shc_1.jpg`,
-    logoSrc: `/assets/scramble_logo.png`,
+    logoSrc: `/assets/shc_logo.png`,
     title: `Scramble Heart City`,
     description: `3v3 tag team fighting game`,
     dateClosedAlpha: `2025`,
